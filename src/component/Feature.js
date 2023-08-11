@@ -32,9 +32,8 @@ class Feature extends Component {
                         <Row className="justify-content-center">
                             <Col lg={7}>
                                 <div className="text-center mb-5">
-                                    <h2 className="">Our Features</h2>
-                                    <p className="text-muted">Ut enim ad minima veniam quis nostrum exercitationem ullam
-                                        corporis suscipit laboriosam nisi commodi consequatur.</p>
+                                    <h2 className="">What We Do....</h2>
+                                    <p className="text-muted">"Our aim is to empower cultivators, offering comprehensive assistance across all aspects of agriculture."</p>
                                 </div>
                             </Col>
                         </Row>
@@ -62,10 +61,9 @@ class Feature extends Component {
                                                      onClick={() => {
                                                          this.toggleTab('v-pills-work');
                                                      }} id="v-pills-work-tab">
-                                                <h4 className="text-dark f-18">Works With Existing Apps</h4>
-                                                <p className="text-muted f-15">At solmen necessi a uniform grammatica
-                                                    pronunciation sommun plu paroles ma quande.</p>
-                                                <p className="text-primary mb-0 read-more">More Information<span
+                                                <h4 className="text-dark f-18">Revolutionizing Farming</h4>
+                                                <p className="text-muted f-15">A Step Towards Empowering Farmers with 'Kisano Ka Apna Bazar.</p>
+                                                <p className="text-success mb-0 read-more">More Information<span
                                                     className="right-icon ml-2">&#8594;</span></p>
                                             </NavLink>
                                         </NavItem>
@@ -75,10 +73,9 @@ class Feature extends Component {
                                                      onClick={() => {
                                                          this.toggleTab('v-pills-marketing');
                                                      }} id="v-pills-work-tab">
-                                                <h4 className="text-dark f-18">Easy Email Marketing</h4>
-                                                <p className="text-muted f-15">At solmen necessi a uniform grammatica
-                                                    pronunciation sommun plu paroles ma quande.</p>
-                                                <p className="text-primary mb-0 read-more">More Information<span
+                                                <h4 className="text-dark f-18">Directing Agricultural Progress</h4>
+                                                <p className="text-muted f-15">Harnessing the Power of 'Kisano Ka Apna Bazar' for Enhanced Crop Yields.</p>
+                                                <p className="text-success mb-0 read-more">More Information<span
                                                     className="right-icon ml-2">&#8594;</span></p>
                                             </NavLink>
                                         </NavItem>
@@ -88,10 +85,9 @@ class Feature extends Component {
                                                      onClick={() => {
                                                          this.toggleTab('v-pills-feedback');
                                                      }} id="v-pills-work-tab">
-                                                <h4 className="text-dark f-18">Get Private Customers Feedback</h4>
-                                                <p className="text-muted f-15">At solmen necessi a uniform grammatica
-                                                    pronunciation sommun plu paroles ma quande.</p>
-                                                <p className="text-primary mb-0 read-more">More Information<span
+                                                <h4 className="text-dark f-18">Path to Agricultural Prosperity</h4>
+                                                <p className="text-muted f-15">Elevating Crop Production and Ensuring Quality with 'Kisano Ka Apna Bazar'.</p>
+                                                <p className="text-success mb-0 read-more">More Information<span
                                                     className="right-icon ml-2">&#8594;</span></p>
                                             </NavLink>
                                         </NavItem>
