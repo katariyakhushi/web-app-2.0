@@ -10,6 +10,7 @@ const Feature = React.lazy(() => import("../../component/Feature"));
 const Project = React.lazy(() => import("../../component/Project"));
 const Clients = React.lazy(() => import("../../component/Clients"));
 const Companies = React.lazy(() => import("../../component/Companies"));
+const Gallery = React.lazy(() => import("../../component/Gallery"));
 const Contact = React.lazy(() => import("../../component/Contact"));
 const Footer = React.lazy(() => import("../../component/Footer/Footer"));
 
@@ -96,6 +97,9 @@ class Layout5 extends Component {
 
                     {/* Importing Client */}
                     <Clients/>
+
+                    {/* Importing Gallery */}
+                    <Gallery/>
 
                     {/* Importing Contact Us */}
                     <Contact/>

@@ -27,10 +27,8 @@ export default class Contact extends Component {
                                 <div className="mb-5 mb-lg-0">
                                     <div className="text-center">
                                         <img src={ContactImg} alt="" className="img-fluid d-block w-75 mx-auto"/>
-                                        <h4 className="mt-4">Are You Facing Any Problem..?</h4>
-                                        <p className="text-muted mb-4">It va esser tam simplic quam Occidental in fact
-                                            it va esser Occidental angles quam un skeptic cambridge es.</p>
-                                        <p className="mt-4">Or you can contact at</p>
+                                        <h4 className="mt-4">For Enquiries..?</h4>
+                                        <p className="text-muted mb-4">Reach out to our team on below details for enquiries or product updates.</p>
                                         <Row>
                                             <Col>
                                                 <Link to="#">
