@@ -9,21 +9,23 @@ const Services = React.lazy(() => import("../../component/Services"));
 const Feature = React.lazy(() => import("../../component/Feature"));
 const Project = React.lazy(() => import("../../component/Project"));
 const Clients = React.lazy(() => import("../../component/Clients"));
+const Companies = React.lazy(() => import("../../component/Companies"));
 const Contact = React.lazy(() => import("../../component/Contact"));
 const Footer = React.lazy(() => import("../../component/Footer/Footer"));
 
-class Layout3 extends Component {
+class Layout5 extends Component {
     constructor(props) {
         super(props);
         this.state = {
             navItems: [
                 {id: 1, idnm: "home", navheading: "Home"},
-                {id: 2, idnm: "about", navheading: "Why Us?"},
-                {id: 3, idnm: "services", navheading: "Services"},
-                {id: 4, idnm: "features", navheading: "Features"},
-                {id: 5, idnm: "project", navheading: "Project"},
-                {id: 6, idnm: "clients", navheading: "Clients"},
-                {id: 7, idnm: "contact", navheading: "Contact Us"},
+                {id: 2, idnm: "about", navheading: "Why us?"},
+                {id: 3, idnm: "services", navheading: "Our Stores"},
+                {id: 4, idnm: "features", navheading: "What we do?"},
+                {id: 5, idnm: "project", navheading: "Products"},
+                {id: 6, idnm: "companies", navheading: "Companies"},
+                {id: 7, idnm: "clients", navheading: "Reviews"},
+                {id: 8, idnm: "contact", navheading: "Contact Us"},
             ],
             pos: document.documentElement.scrollTop,
             imglight: false,
@@ -89,6 +91,9 @@ class Layout3 extends Component {
                     {/* Importing Project */}
                     <Project/>
 
+                    {/* Companies */}
+                    <Companies/>
+
                     {/* Importing Client */}
                     <Clients/>
 
@@ -103,4 +108,4 @@ class Layout3 extends Component {
     }
 }
 
-export default Layout3;
+export default Layout5;

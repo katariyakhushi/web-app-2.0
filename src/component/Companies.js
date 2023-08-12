@@ -95,7 +95,7 @@ export default class Companies extends Component {
 
         return (
             <React.Fragment>
-                <section className="section" id="clients">
+                <section className="section" id="companies">
                     <Container>
                         <Row className="justify-content-center" >
                             <Col lg={7}>

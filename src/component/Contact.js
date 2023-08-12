@@ -45,12 +45,13 @@ export default class Contact extends Component {
                                            <Col lg={12}>
                                                <Link to="#">
                                                    <div className="badge f-14 bg-soft-dark text-muted "><span
-                                                       className="text-dark">Whatsapp Number:</span> (+91) 96444 09115
+                                                       className="text-dark">Toll Free Number:</span> (+91) 88007 79618
                                                    </div>
                                                </Link>
                                                <Link to="#">
-                                                   <div className="badge f-14 bg-soft-dark text-muted"><span
-                                                       className="text-dark mr-1">Whatsapp Number:</span> (+91) 96444 09115
+                                                   <div className="badge f-14 bg-soft-dark text-muted mt-2"><span
+                                                       className="text-dark mr-1">
+                                                       <i className="fa"></i>Whatsapp Number:</span> (+91) 96444 09115
                                                    </div>
                                                </Link>
                                            </Col>

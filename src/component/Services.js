@@ -1,6 +1,5 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import { Col, Container, Row } from "reactstrap";
-import { Link } from "react-router-dom";
 
 // Import Background Image
 import store1 from "../assets/images/stores/store-shajapur.jpeg";
@@ -48,11 +47,6 @@ export default class Services extends Component {
 }
 
 function StoreCard({ imgSrc, title, mapSrc }) {
-    const [showMap, setShowMap] = useState(false);
-
-    const toggleMap = () => {
-        setShowMap(!showMap);
-    };
 
     return (
         <Col lg={4}>
@@ -60,18 +54,9 @@ function StoreCard({ imgSrc, title, mapSrc }) {
                 <img src={imgSrc} alt="" className="img-fluid d-block" />
                 <br />
                 <h4 className="service-title mt-4 mb-3 f-18">{title}</h4>
-                <a href={mapSrc} className="read-more text-success" target="_blank">
+                <a href={mapSrc} className="read-more text-success" target="_blank"  rel="noreferrer">
                     Locate Me<span className="right-icon ml-2">&#8594;</span>
                 </a>
-                {/* {showMap && (
-                    <div className="map-container">
-                        <iframe
-                            src={mapSrc}
-                            width="250" height="250" style={{ border: 0 }}
-                            allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                )} */}
             </div>
         </Col>
     );

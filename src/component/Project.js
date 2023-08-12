@@ -81,7 +81,7 @@ export default class Project extends Component {
                                 <Col lg={4} md={6} key={key}>
                                     <div className="project-box mb-4">
                                         <div className="position-relative overflow-hidden rounded">
-                                            <img src={item.img} width="100x" height="150px" alt="" className="img-fluid d-block mx-auto shadow"/>
+                                            <img src={item.img} width="180x" height="350px" alt="" className="img-fluid d-block mx-auto shadow"/>
                                             <div className="project-overlay">
                                                 <div className="project-content">
                                                     <Link to="#">
