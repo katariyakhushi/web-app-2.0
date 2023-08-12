@@ -4,11 +4,11 @@ import {Col, Container, Row} from "reactstrap";
 import Slider from "react-slick";
 
 // Import client   Image
-import Icon from "../assets/images/testi-icon.png";
 import Img1 from "../assets/images/user/img-1.jpg";
 import Img2 from "../assets/images/user/img-2.jpg";
 import Img3 from "../assets/images/user/img-3.jpg";
 import Img4 from "../assets/images/user/img-4.jpg";
+import FeatherIcon from "feather-icons-react";
 
 export default class Clients extends Component {
     constructor(props) {
@@ -33,7 +33,7 @@ export default class Clients extends Component {
                     id: 3,
                     img: Img3,
                     name: 'Rajesh patidar',
-                    designation: 'Badoda, Shajapur',
+                    designation: 'Boda, Shajapur',
                     review: 'I have tried your agricultural product and I am amazed at how it has positively impacted the safety of my crops.The agricultural product has proven to be helpful in safeguarding my plants.'
                 },
                 {
@@ -90,7 +90,8 @@ export default class Clients extends Component {
                     <div className="testi-box text-center m-2">
                         <div className="card border-0 shadow p-4 mb-4">
                             <div className="mt-1 mb-3">
-                                <img src={Icon} alt="" className="testi-icon img-fluid d-block mx-auto w-auto text-success"/>
+                                <FeatherIcon className="icon mr-1"
+                                             icon="message-square"/>
                             </div>
                             <p className="text-muted mb-0 f-15">{item.review}</p>
                         </div>
@@ -99,7 +100,6 @@ export default class Clients extends Component {
                             <p className="text-muted f-14">{item.designation}</p>
                         </div>
                     </div>
-                    
                 </div>
             );
         });
@@ -112,18 +112,17 @@ export default class Clients extends Component {
                             <Col lg={7}>
                                 <div className="text-center mb-5">
                                     <h2 className="">What Our Customers Say</h2>
-                                    <p className="text-muted">Ut enim ad minima veniam quis nostrum exercitationem ullam
-                                        corporis suscipit laboriosam nisi commodi consequatur.</p>
+                                    <p className="text-muted">Kisano ka apna bazar believes in their customers
+                                        success.</p>
                                 </div>
                             </Col>
                         </Row>
                         <Row>
                             <Col lg={12}>
                                 <div
-                                    id="testi-clients" 
+                                    id="testi-clients"
                                     className="owl-carousel owl-theme testi-content"
                                 >
-                                    
                                     <Slider {...settings}>
                                         {slides}
                                     </Slider>

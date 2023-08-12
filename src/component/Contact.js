@@ -6,7 +6,8 @@ import {Button, Col, Container, Form, FormGroup, Input, Label, Row} from "reacts
 
 
 // Import Background Image
-import ContactImg from "../assets/images/contact-img.png";
+import ContactImg from "../assets/images/contact-img.jpeg";
+import FeatherIcon from "feather-icons-react";
 
 export default class Contact extends Component {
     render() {
@@ -30,26 +31,35 @@ export default class Contact extends Component {
                                         <h4 className="mt-4">For Enquiries..?</h4>
                                         <p className="text-muted mb-4">Reach out to our team on below details for enquiries or product updates.</p>
                                         <Row>
-                                            <Col>
-                                                <Link to="#">
-                                                    <div className="badge f-14 bg-soft-dark text-muted mr-0"><span
-                                                        className="text-dark " >Email:</span> kisanokaapnabazaar100@gmail.com
-                                                    </div>
-                                                </Link>
-                                            </Col>
-                                        </Row>
-                                        <br/>
-                                        <Row>
                                            <Col lg={12}>
                                                <Link to="#">
-                                                   <div className="badge f-14 bg-soft-dark text-muted "><span
-                                                       className="text-dark">Toll Free Number:</span> (+91) 88007 79618
+                                                   <div className="badge f-14 bg-soft-dark text-muted">
+                                                       <span
+                                                           className="text-dark">
+                                                           <FeatherIcon
+                                                               className="icon mr-1"
+                                                               icon="mail"/>
+                                                            Email:
+                                                        </span> kisanokaapnabazaar100@gmail.com
+                                                   </div>
+                                               </Link>
+                                               <Link to="#">
+                                                   <div className="badge f-14 bg-soft-dark text-muted mt-2">
+                                                       <span
+                                                       className="text-dark">
+                                                           <FeatherIcon
+                                                               className="icon mr-1"
+                                                               icon="phone"/>
+                                                            Toll Free Number:
+                                                        </span> (+91) 88007 79618
                                                    </div>
                                                </Link>
                                                <Link to="#">
                                                    <div className="badge f-14 bg-soft-dark text-muted mt-2"><span
                                                        className="text-dark mr-1">
-                                                       <i className="fa"></i>Whatsapp Number:</span> (+91) 96444 09115
+                                                       <FeatherIcon className="icon mr-1"
+                                                                    icon="message-circle"/>
+                                                        Whatsapp Number: </span> (+91) 96444 09115
                                                    </div>
                                                </Link>
                                            </Col>

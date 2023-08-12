@@ -34,30 +34,15 @@ export default class About extends Component {
                                 <br/>
 
                                 <p className="f-17 text-muted"><FeatherIcon
-                                    className="icon-xs text-primary icon-fill-success icon mr-2" icon="grid"/> Empowering Farmers</p>
+                                    className="icon-xs text-success icon-fill-success icon mr-2" icon="grid"/> Empowering Farmers</p>
                                 <p className="f-17 text-muted"><FeatherIcon
-                                    className="icon-xs text-primary icon-fill-primary icon mr-2"
+                                    className="icon-xs text-success icon-fill-primary icon mr-2"
                                     icon="layout"/> Quality and Value</p>
                                 <p className="f-17 text-muted mb-4"><FeatherIcon
-                                    className="icon-xs text-primary icon-fill-primary icon mr-2" icon="monitor"/> Expert Assistance</p>
+                                    className="icon-xs text-success icon-fill-primary icon mr-2" icon="monitor"/> Expert Assistance</p>
                                 <Link to="#" className="read-more f-18 text-success">More Information <span
                                     className="ml-2 right-icon f-24">&#8594;</span></Link>
                             </Col>
-                            {/*<Col lg={4}>*/}
-                            {/*    <div className="card border-0">*/}
-                            {/*        <div className="bg-soft-primary about-img rounded">*/}
-                            {/*            <img src={Img1} alt="" className="img-fluid d-block mx-auto"/>*/}
-                            {/*        </div>*/}
-                            {/*        <div className="mt-3">*/}
-                            {/*            <p className="text-uppercase text-muted mb-2 f-13">Development</p>*/}
-                            {/*            <h4 className="f-18">Product Development</h4>*/}
-                            {/*            <p className="text-muted">Nemo enim ipsam voluptatem quia voluptas sit*/}
-                            {/*                aspernatur aut odit aut fugit sed quia consequuntur magni.</p>*/}
-                            {/*            <Link to="#" className="read-more">Read More <span*/}
-                            {/*                className="ml-2 right-icon">&#8594;</span></Link>*/}
-                            {/*        </div>*/}
-                            {/*    </div>*/}
-                            {/*</Col>*/}
                             <Col lg={4}>
                                 <div className="card border-0">
                                     <div className="bg-soft-info about-img rounded" style={{

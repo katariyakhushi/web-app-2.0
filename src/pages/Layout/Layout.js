@@ -14,7 +14,7 @@ const Gallery = React.lazy(() => import("../../component/Gallery"));
 const Contact = React.lazy(() => import("../../component/Contact"));
 const Footer = React.lazy(() => import("../../component/Footer/Footer"));
 
-class Layout5 extends Component {
+class Layout extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -22,7 +22,6 @@ class Layout5 extends Component {
                 {id: 1, idnm: "home", navheading: "Home"},
                 {id: 2, idnm: "about", navheading: "Why us?"},
                 {id: 3, idnm: "services", navheading: "Our Stores"},
-                {id: 4, idnm: "features", navheading: "What we do?"},
                 {id: 5, idnm: "project", navheading: "Products"},
                 {id: 6, idnm: "companies", navheading: "Companies"},
                 {id: 7, idnm: "clients", navheading: "Reviews"},
@@ -112,4 +111,4 @@ class Layout5 extends Component {
     }
 }
 
-export default Layout5;
+export default Layout;

@@ -18,34 +18,32 @@ class Footer extends Component {
             links: [
                 {
                     id: 1,
-                    title: "Customer",
+                    title: "Companies",
                     child: [
-                        {title: "Works", link: "/"},
-                        {title: "Strategy", link: "/"},
-                        {title: "Releases", link: "/"},
-                        {title: "Press", link: "/"},
-                        {title: "Mission", link: "/"},
+                        {title: "Coromandel", link: "https://www.coromandel.biz/"},
+                        {title: "Dhanuka", link: "https://www.dhanuka.com/"},
+                        {title: "PlantBiotix", link: "https://www.plantbiotix.com/"},
                     ],
                 },
                 {
                     id: 2,
                     title: "Product",
                     child: [
-                        {title: "Tranding", link: "/"},
-                        {title: "Popular", link: "/"},
-                        {title: "Customers", link: "/"},
-                        {title: "Features", link: "/"},
+                        {title: "INCRYL", link: "/"},
+                        {title: "LIMO-CRUB", link: "/"},
+                        {title: "MONAS-CRUB", link: "/"},
+                        {title: "RUBITROL", link: "/"},
+                        {title: "Xplorer-Glory", link: "/"},
                     ],
                 },
                 {
                     id: 3,
                     title: "Learn More",
                     child: [
-                        {title: "Developers", link: "/"},
-                        {title: "Support", link: "/"},
+                        {title: "About Us", link: "/"},
                         {title: "Customer Service", link: "/"},
-                        {title: "Get Started", link: "/"},
-                        {title: "Guide", link: "/"},
+                        {title: "How to use Fertilizers?", link: "/"},
+                        {title: "Suppport & Guidance", link: "/"},
                     ],
                 },
             ],
@@ -68,9 +66,14 @@ class Footer extends Component {
                                         <img src={logolight} alt="" className="" height="35"/>
                                     </Link>
                                     <p className="text-white-50 my-4">किसानों का अपना बाजार शाजापुर से स्टार्ट हुआ एक संस्थान है जो किसानों को खाद बीज दवाई एग्री एक्सपर्ट के माध्यम से  घर तक पहुंचाने का काम करता है इन प्रोडक्ट का समय पर उपयोग कर किसान अपनी फसलों का  उत्पादन बढ़ाकर अच्छी उपज ले साथ ही गुणवत्ता बढ़ाकर अपनी फसलों का अच्छा भाव ले सके सके इन सभी सुविधाओं को किसानों तक पहुंचाने के लिए किसानों का अपना बाजार ने एक पहल कि हे अपनी ब्रांच बढ़ाकर वह ज्यादा से ज्यादा किसानों तक पहुंच सके यह शाखाएं अभी तक 1 शाजापुर 2 बेरछा 3 बोड़ा  4 सुजालपुर में पहुंच चुकी है 1 शाजापुर में टंकी चौराहे के पास है 2  बेरछा में यहां sbi bank के पास है 3 वोडा में यहां सोसाइटी के सामने नरसिंह रोड पर है</p>
-                                    <Link to="#" className="text-white-70"><FeatherIcon className="icon mr-1"
-                                                                                        icon="instagram"/>{" "} Join Us
-                                        on Instagram</Link>
+                                    <div className="text-white-70">
+                                        <a href="https://instagram.com/kisanokaapnabazar?igshid=MzRlODBiNWFlZA==" target="_blank" rel="noreferrer">
+                                            <FeatherIcon
+                                                className="icon mr-1"
+                                                icon="instagram"/>{" "} Join Us
+                                            on Instagram
+                                        </a>
+                                    </div>
                                 </div>
                             </Col>
                             <Col lg={7} className="offset-lg-1">

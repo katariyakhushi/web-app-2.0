@@ -26,7 +26,7 @@ export default class Services extends Component {
                             <StoreCard
                                 imgSrc={store2}
                                 title="Nr. SBI bank, Berchha"
-                                mapSrc="https://goo.gl/maps/TDBBSvNXtcaJvLhq6"  
+                                mapSrc="https://goo.gl/maps/Sg9uwKzj48cRxVci7"
                             />
                             <StoreCard
                                 imgSrc={store1}

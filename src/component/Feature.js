@@ -3,9 +3,7 @@ import {Col, Container, Nav, NavItem, NavLink, Row, TabContent, TabPane} from "r
 import classnames from 'classnames';
 
 // Import Image
-import Img1 from "../assets/images/features/img-1.png";
-import Img2 from "../assets/images/features/img-2.png";
-import Img3 from "../assets/images/features/img-3.png";
+import Img1 from "../assets/images/features/img-2.webp";
 
 class Feature extends Component {
     constructor(props) {
@@ -33,7 +31,9 @@ class Feature extends Component {
                             <Col lg={7}>
                                 <div className="text-center mb-5">
                                     <h2 className="">What We Do....</h2>
-                                    <p className="text-muted">"Our aim is to empower cultivators, offering comprehensive assistance across all aspects of agriculture."</p>
+                                    <p className="text-muted">"Our aim is to empower cultivators,
+                                        offering comprehensive assistance across all aspects of agriculture."
+                                    </p>
                                 </div>
                             </Col>
                         </Row>
@@ -45,10 +45,10 @@ class Feature extends Component {
                                             <img src={Img1} alt="" className="img-fluid d-block mx-auto"/>
                                         </TabPane>
                                         <TabPane tabId="v-pills-marketing" className="fade show">
-                                            <img src={Img2} alt="" className="img-fluid d-block mx-auto"/>
+                                            <img src={Img1} alt="" className="img-fluid d-block mx-auto"/>
                                         </TabPane>
                                         <TabPane tabId="v-pills-feedback" className="fade show">
-                                            <img src={Img3} alt="" className="img-fluid d-block mx-auto"/>
+                                            <img src={Img1} alt="" className="img-fluid d-block mx-auto"/>
                                         </TabPane>
                                     </TabContent>
                                 </Col>
