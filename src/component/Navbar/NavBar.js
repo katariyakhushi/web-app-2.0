@@ -83,12 +83,10 @@ class NavbarPage extends Component {
                                     </li>
                                     {" "}
                                     <li className="list-inline-item">
-                                        <div className="menu-social-link">
-                                            <a href="https://instagram.com/kisanokaapnabazar?igshid=MzRlODBiNWFlZA==">
+                                        <Link className="menu-social-link">
                                                 <FeatherIcon icon="instagram"
                                                              className="icon-xs sw_1-5"/>
-                                            </a>
-                                        </div>
+                                        </Link>
                                     </li>
                                     {" "}
                                     <li className="list-inline-item mr-0">
