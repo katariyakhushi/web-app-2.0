@@ -5,7 +5,7 @@ import {BrowserRouter as Router, Route, Switch, withRouter,} from "react-router-
 //import style
 import "./assets/css/pe-icon-7.css";
 
-import "./assets/scss/themes.scss";
+import "./assets/fonts/scss/themes.scss";
 
 class App extends Component {
     constructor(props) {

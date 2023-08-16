@@ -34,7 +34,7 @@ export default class About extends Component {
                                 <br/>
 
                                 <p className="f-17 text-muted"><FeatherIcon
-                                    className="icon-xs text-primary icon-fill-success icon mr-2" icon="grid"/> Empowering Farmers</p>
+                                    className="icon-xs text-primary icon-fill-primary icon mr-2" icon="grid"/> Empowering Farmers</p>
                                 <p className="f-17 text-muted"><FeatherIcon
                                     className="icon-xs text-primary icon-fill-primary icon mr-2"
                                     icon="layout"/> Quality and Value</p>

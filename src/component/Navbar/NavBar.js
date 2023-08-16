@@ -71,8 +71,8 @@ class NavbarPage extends Component {
                                         </NavItem>
                                     ))}
                                 </Nav>
-                                <ul className="list-inline ml-auto menu-social-icon mb-0 py-2 py-lg-0">
-                                    <li className="list-inline-item ml-0">
+                                <ul className="list-inline ml-auto menu-social-icon mb-0 py-2 py-lg-0 ">
+                                    <li className="list-inline-item ml-0 text-success">
                                         <Link to="#" className="menu-social-link"><FeatherIcon icon="facebook"
                                                                                                className="icon-xs sw_1-5"/></Link>
                                     </li>
