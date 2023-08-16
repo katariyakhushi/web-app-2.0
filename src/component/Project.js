@@ -22,37 +22,37 @@ export default class Project extends Component {
                 {
                     id: 1,
                     img: Img1,
-                    title: 'Plantbioti',
+                    title: 'Plantbiotix',
                     designation: 'INCRYL'
                 },
                 {
                     id: 2,
                     img: Img2,
-                    title: 'Plantbioti',
+                    title: 'Plantbiotix',
                     designation: 'INCRYL ULTRA'
                 },
                 {
                     id: 3,
                     img: Img3,
-                    title: 'Plantbioti',
+                    title: 'Plantbiotix',
                     designation: 'LIMO-CRUB'
                 },
                 {
                     id: 4,
                     img: Img4,
-                    title: 'Plantbioti',
+                    title: 'Plantbiotix',
                     designation: 'MONAS-CRUB'
                 },
                 {
                     id: 5,
                     img: Img5,
-                    title: 'Plantbioti',
+                    title: 'Plantbiotix',
                     designation: 'RUBITROL'
                 },
                 {
                     id: 6,
                     img: Img6,
-                    title: 'Plantbioti',
+                    title: 'Plantbiotix',
                     designation: 'xplorer-glory'
                 },
             ],
@@ -81,7 +81,7 @@ export default class Project extends Component {
                                 <Col lg={4} md={6} key={key}>
                                     <div className="project-box mb-4">
                                         <div className="position-relative overflow-hidden rounded">
-                                            <img src={item.img} width="100x" height="150px" alt="" className="img-fluid d-block mx-auto shadow"/>
+                                            <img src={item.img} width="180" height="350" alt="" className="img-fluid d-block mx-auto shadow"/>
                                             <div className="project-overlay">
                                                 <div className="project-content">
                                                     <Link to="#">
@@ -94,11 +94,13 @@ export default class Project extends Component {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="p-3">
-                                            <h4 className="f-17 mb-1">
+                                        <div className="d-flex flex-column align-items-center p-3">
+                                            <h4 className="f-17 mb-1 text-center">
                                                 <Link to="#" className="text-dark">{item.title}</Link>
                                             </h4>
-                                            <p className="text-muted">{item.designation}</p>
+                                            <p className="text-center" style={{
+                                                color: "green"
+                                            }}>{item.designation}</p>
                                         </div>
                                     </div>
                                 </Col>

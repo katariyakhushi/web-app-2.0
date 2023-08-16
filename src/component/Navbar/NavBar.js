@@ -29,12 +29,13 @@ class NavbarPage extends Component {
                 <Navbar
                     expand="lg"
                     fixed={this.props.top === true ? "top" : ""}
-                    className={this.props.navClass + " fixed-top navbar-custom sticky sticky-dark align-items-center"}
+                    className={this.props.navClass + " fixed-top navbar-custom sticky sticky-dark align-items-center "}
                     id="navbar"
+                    
                 >
-                    <Container>
+                    <Container  >
                         {/* LOGO */}
-                        <Link className="logo mr-3" to="/">
+                        <Link className="logo mr-3  " to="/">
                             {this.props.imglight === true ? (
                                 <img src={logolight} alt="" height="26"/>
                             ) : (
@@ -47,16 +48,17 @@ class NavbarPage extends Component {
                         <Collapse
                             id="navbarCollapse"
                             isOpen={this.state.isOpenMenu}
-                            className=" navbar-collapse"
+                            className=" navbar-collapse  "
                         >
                             <ScrollspyNav
                                 scrollTargetIds={targetId}
                                 scrollDuration="800"
                                 headerBackground="true"
                                 activeNavClass="active"
-                                className="navbar-collapse"
+                                className="navbar-collapse "
                             >
-                                <Nav className="navbar-nav navbar-center" id="navbar-navlist">
+                                <Nav className="navbar-nav navbar-center text-success" id="navbar-navlist">
+                            
                                     {this.props.navItems.map((item, key) => (
                                         <NavItem
                                             key={key}
@@ -64,6 +66,7 @@ class NavbarPage extends Component {
                                         >
                                             <NavLink
                                                 className={item.navheading === "Home" ? "active" : ""}
+                                                
                                                 href={"#" + item.idnm}
                                             >
                                                 {item.navheading}
@@ -72,23 +75,25 @@ class NavbarPage extends Component {
                                     ))}
                                 </Nav>
                                 <ul className="list-inline ml-auto menu-social-icon mb-0 py-2 py-lg-0 ">
-                                    <li className="list-inline-item ml-0 text-success">
-                                        <Link to="#" className="menu-social-link"><FeatherIcon icon="facebook"
+                                    <li className="list-inline-item ml-0 ">
+                                        <Link to="#" className="menu-social-link  text-success "><FeatherIcon icon="facebook"
+                                                                                               className="icon-xs sw_1-5"/></Link>
+                                    </li>
+                                    {" "}
+                                    <li className="list-inline-item ">
+                                        <Link to="#" className="menu-social-link  text-success "><FeatherIcon icon="twitter"
                                                                                                className="icon-xs sw_1-5"/></Link>
                                     </li>
                                     {" "}
                                     <li className="list-inline-item">
-                                        <Link to="#" className="menu-social-link"><FeatherIcon icon="twitter"
-                                                                                               className="icon-xs sw_1-5"/></Link>
-                                    </li>
-                                    {" "}
-                                    <li className="list-inline-item">
-                                        <Link to="#" className="menu-social-link"><FeatherIcon icon="instagram"
-                                                                                               className="icon-xs sw_1-5"/></Link>
+                                        <Link className="menu-social-link  text-success ">
+                                                <FeatherIcon icon="instagram"
+                                                             className="icon-xs sw_1-5"/>
+                                        </Link>
                                     </li>
                                     {" "}
                                     <li className="list-inline-item mr-0">
-                                        <Link to="#" className="menu-social-link"><FeatherIcon icon="linkedin"
+                                        <Link to="#" className="menu-social-link  text-success "><FeatherIcon icon="linkedin"
                                                                                                className="icon-xs sw_1-5"/></Link>
                                     </li>
                                 </ul>

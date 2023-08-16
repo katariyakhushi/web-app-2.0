@@ -8,7 +8,7 @@ a {
 
 body {
     font-family: "Muli", sans-serif;
-    color: #343a40;
+    color: #5c97aa;
     background: #ffffff;
 }
 
@@ -22,8 +22,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-item .nav-link {
     display: inline-block;
-    color: #343a40;
+    color: #3ea257;
     text-decoration: none;
+   
 }
 
 .navbar .menu-social-icon li {
@@ -31,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .menu-social-icon li .menu-social-link {
-    color: #9b9bae;
+    color: #9fae9b;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
@@ -165,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-sticky.navbar-custom .navbar-nav li a {
-    color: #8a8aa0 !important;
+    color: #07b11b !important;
 }
 
 .nav-sticky.navbar-custom .navbar-nav li.active a, .nav-sticky.navbar-custom .navbar-nav li a:hover, .nav-sticky.navbar-custom .navbar-nav li a:active {
@@ -200,7 +201,7 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-custom .navbar-nav li a {
         -webkit-transition: all 0.4s;
         transition: all 0.4s;
-        color: #9b9bae !important;
+        color: #26df0d !important;
         margin: 0px;
     }
 
@@ -225,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .navbar-custom.navbar-light .navbar-nav li.active a, .navbar-custom.navbar-light .navbar-nav li a:hover, .navbar-custom.navbar-light .navbar-nav li a:active {
-        color: #343a40 !important;
+        color: #099b3c !important;
     }
 
     .navbar .menu-social-icon li {
@@ -258,7 +259,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .navbar-light .nav-item .nav-link:after {
-        background: #343a40;
+        background: #15a935;
     }
 }
 
@@ -386,8 +387,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn.btn-info:hover, .btn.btn-info:focus, .btn.btn-info.focus, .btn.btn-info:active, .btn.btn-info.active {
-    -webkit-box-shadow: 0 3px 10px rgba(16, 151, 189, 0.5);
-    box-shadow: 0 3px 10px rgba(16, 151, 189, 0.5);
+    -webkit-box-shadow: 0 3px 10px rgba(24, 174, 66, 0.5);
+    box-shadow: 0 3px 10px rgba(12, 172, 44, 0.5);
     color: #ffffff !important;
 }
 
@@ -638,11 +639,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-primary {
-    color: #3956de !important;
+    color: #2fd61c !important;
 }
 
 .bg-primary {
-    background-color: #3956de !important;
+    background-color: #11c714 !important;
 }
 
 .icon-fill-primary {
