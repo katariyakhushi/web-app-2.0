@@ -4,7 +4,7 @@ import {Col, Container, Row} from "reactstrap";
 import Slider from "react-slick";
 
 // Import client   Image
-import Img1 from "../assets/images/user/img-6.png";
+import Img1 from "../assets/images/user/img-1.jpg";
 import Img2 from "../assets/images/user/img-2.jpg";
 import Img3 from "../assets/images/user/img-3.jpg";
 import Img4 from "../assets/images/user/img-4.jpg";

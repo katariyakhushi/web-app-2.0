@@ -12,6 +12,7 @@ class Section extends Component {
             <React.Fragment>
                 <section className="hero-1-bg bg-light" style={{backgroundImage: `url(${Background})`}} id="home">
                     <Container>
+                        <h6>igelflEU</h6>
                         <Row className="align-items-center justify-content-center">
                             <Col lg={6}>
                                 <h1 className="display-4 font-weight-medium mb-4">Kisano Ka Apna Bazar</h1>
