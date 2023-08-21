@@ -37,6 +37,18 @@ export default class Project extends Component {
                     id: 5,
                     img: Img5,
                 },
+                {
+                    id: 6,
+                    img: Img3,
+                },
+                {
+                    id: 7,
+                    img: Img4,
+                },
+                {
+                    id: 8,
+                    img: Img5,
+                },
             ],
         };
     }
@@ -64,6 +76,52 @@ export default class Project extends Component {
                                     <div className="project-box mb-4">
                                         <div className="position-relative overflow-hidden rounded">
                                             <img src={item.img} alt="" className="img-fluid d-block mx-auto shadow"/>
+                                            <div className="project-overlay">
+                                                <div className="project-content">
+                                                    <div className="project-icon" style={{
+                                                        cursor: "pointer"
+                                                    }}>
+                                                        <a href={item.img} style={{
+                                                            textDecoration: "none"
+                                                        }}>
+                                                            <i>
+                                                                <FeatherIcon icon="eye"/>
+                                                            </i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Col>
+                            ))}
+                        </Row>
+                    </Container>
+
+
+                    
+                    
+                    
+                    
+                    
+                    <Container>
+                        <Row className="justify-content-center">
+                            <div className="col-lg-7">
+                                <div className="text-center mb-5">
+                                    <h2 className="">MEET THE TEAM</h2>
+                                    <p className="text-muted">
+                                    "jcgjv yhgv5 cgbo tgb7yhbv jv c5chgvcxcikyvjng"
+                                    </p>
+                                </div>
+                            </div>
+                        </Row>
+                        <Row>
+                            {/* Render Footer Link */}
+                            {this.state.images.map((item, key) => (
+                                <Col lg={4} md={4} key={key}>
+                                    <div className="project-box mb-4">
+                                        <div className="position-relative overflow-hidden rounded">
+                                            <img src={item.img} alt="" className="img-fluid d-block mx-auto shadow" height="80%" width="80%"/>
                                             <div className="project-overlay">
                                                 <div className="project-content">
                                                     <div className="project-icon" style={{

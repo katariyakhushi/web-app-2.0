@@ -11,29 +11,26 @@ class Section extends Component {
         return (
             
             <React.Fragment>
-                <Col lg={12} >
-                <div>
-                <img src={img1} alt="" className="img-fluid d-block mx-auto position-absolute top-0" height="50%" width="100%"/>
-                </div>
-                </Col>
+                
                 
                 
                 <section className="hero-1-bg bg-light" style={{backgroundImage: `url(${Background})`}} id="home">
                
                     <Container>
+                   
                     
                         <Row className="align-items-center justify-content-center">
-                            <Col lg={12}>
-                                <h1 className="display-4 font-weight-medium mb-4 text-center">Kisano Ka Apna Bazar</h1>
-                                <p className="text-muted mb-4 pb-3">किसानों का अपना बाजार शाजापुर से स्टार्ट हुआ एक संस्थान है जो किसानों को खाद बीज दवाई एग्री एक्सपर्ट के माध्यम से
+                            <Col lg={6}>
+                                <h1 className="display-4 font-weight-medium mb-4  ">Kisano Ka Apna Bazar</h1>
+                                <p className=" mb-4 pb-3 text-center">किसानों का अपना बाजार शाजापुर से स्टार्ट हुआ एक संस्थान है जो किसानों को खाद बीज दवाई एग्री एक्सपर्ट के माध्यम से
                                     घर तक पहुंचाने का काम करता है इन प्रोडक्ट का समय पर उपयोग कर किसान अपनी फसलों का  उत्पादन बढ़ाकर अच्छी उपज ले साथ ही गुणवत्ता बढ़ाकर अपनी
                                     फसलों का अच्छा भाव ले सके सके इन सभी सुविधाओं को किसानों तक पहुंचाने के लिए किसानों का अपना बाजार ने एक पहल कि हे अपनी ब्रांच बढ़ाकर वह ज्यादा से ज्यादा किसानों तक
                                     पहुंच सके यह शाखाएं अभी तक 1 शाजापुर 2 बेरछा 3 बोड़ा  4 सुजालपुर में पहुंच चुकी है 1 शाजापुर में टंकी चौराहे के पास है 2  बेरछा में यहां sbi bank के पास है 3 वोडा में यहां सोसाइटी के
-                                    सामने नरसिंह रोड पर है<Link to="#" className="d-flex  align-items-center justify-content-center" height="10%" width="10%">More<span
+                                    सामने नरसिंह रोड पर है<Link to="#" className="d-flex  align-items-center " height="10%" width="10%">More<span
                                     className="ml-2 right-icon">&#8594;</span></Link> </p>
                                
                             </Col>
-                            <Col lg={8} md={10}>
+                            <Col lg={6} md={4}>
                                 <div className=" mt-5 mt-lg-0">
                                     <img src={hero} alt="" className="img-fluid d-block mx-auto"/>
                                 </div>
