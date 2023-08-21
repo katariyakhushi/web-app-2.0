@@ -54,7 +54,7 @@ function StoreCard({ imgSrc, title, mapSrc }) {
                 <img src={imgSrc} alt="" className="img-fluid d-block" />
                 <br />
                 <h4 className="service-title mt-4 mb-3 f-18">{title}</h4>
-                <a href={mapSrc} className="read-more text-success" target="_blank"  rel="noreferrer">
+                <a href={mapSrc} className="read-more" target="_blank"  rel="noreferrer">
                     Locate Me<span className="right-icon ml-2">&#8594;</span>
                 </a>
             </div>

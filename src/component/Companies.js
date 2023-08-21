@@ -28,11 +28,6 @@ export default class Companies extends Component {
                     id: 3,
                     img: Img3,
                     name: 'Plantbiotix',
-                },
-                {
-                    id: 4,
-                    img: Img3,
-                    name: 'Plantbiotix',
                 }
             ],
         };

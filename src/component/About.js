@@ -34,13 +34,13 @@ export default class About extends Component {
                                 <br/>
 
                                 <p className="f-17 text-muted"><FeatherIcon
-                                    className="icon-xs text-success icon-fill-success icon mr-2" icon="grid"/> Empowering Farmers</p>
+                                    className="icon-xs icon mr-2" icon="grid"/> Empowering Farmers</p>
                                 <p className="f-17 text-muted"><FeatherIcon
-                                    className="icon-xs text-success icon-fill-primary icon mr-2"
+                                    className="icon-xs icon mr-2"
                                     icon="layout"/> Quality and Value</p>
                                 <p className="f-17 text-muted mb-4"><FeatherIcon
-                                    className="icon-xs text-success icon-fill-primary icon mr-2" icon="monitor"/> Expert Assistance</p>
-                                <Link to="#" className="read-more f-18 text-success">More Information <span
+                                    className="icon-xs icon mr-2" icon="monitor"/> Expert Assistance</p>
+                                <Link to="#" className="read-more f-18">More Information <span
                                     className="ml-2 right-icon f-24">&#8594;</span></Link>
                             </Col>
                             <Col lg={4}>
@@ -56,7 +56,7 @@ export default class About extends Component {
                                         <p className="text-uppercase text-muted mb-2 f-13">Green Solutions</p>
                                         <h4 className="f-18">Marketing Product</h4>
                                         <p className="text-muted">Kisano ka Apna Bazar:- Starting from Shajapur, our organization delivers fertilizers, seeds, and expert advice to farmers' doorsteps, enhancing crop production and quality. Join us today to elevate your crops to new heights</p>
-                                        <Link to="#" className="read-more text-success">Read More <span
+                                        <Link to="#" className="read-more text-primary">Read More <span
                                             className="ml-2 right-icon">&#8594;</span></Link>
                                     </div>
                                 </div>
