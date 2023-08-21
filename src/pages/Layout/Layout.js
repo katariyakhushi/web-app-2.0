@@ -13,6 +13,7 @@ const Companies = React.lazy(() => import("../../component/Companies"));
 const Gallery = React.lazy(() => import("../../component/Gallery"));
 const Contact = React.lazy(() => import("../../component/Contact"));
 const Footer = React.lazy(() => import("../../component/Footer/Footer"));
+const MeetTheTeam = React.lazy(() => import("../../component/MeetTheTeam"));
 
 class Layout extends Component {
     constructor(props) {
@@ -99,6 +100,9 @@ class Layout extends Component {
 
                     {/* Importing Gallery */}
                     <Gallery/>
+
+                    {/* Importing Meet The Team Section */}
+                    <MeetTheTeam/>
 
                     {/* Importing Contact Us */}
                     <Contact/>

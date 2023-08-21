@@ -96,7 +96,7 @@ export default class Contact extends Component {
                                             </Col>
                                             <Col md={12}>
                                                 <FormGroup className="app-label">
-                                                    <Label for="comments" className="text-muted">Type Massage</Label>
+                                                    <Label for="comments" className="text-muted">Type Message</Label>
                                                     <Input name="comments" id="comments" type="textarea" rows="4"
                                                            className="form-control" placeholder="Message. . ."/>
                                                 </FormGroup>
