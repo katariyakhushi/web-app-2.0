@@ -1,76 +1,136 @@
-import React, {Component} from "react";
-import {Col, Container, Row} from "reactstrap";
-
-//import icon
+import React, { Component } from "react";
+import { Col, Container, Row } from "reactstrap";
 import FeatherIcon from "feather-icons-react";
-
-
-
-
 
 export default class Achievements extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            names: [
-                {
-                    id: 1,
-                    name: "Sandeep Bhimawad",
-                    designation: "Co-founder"
-                },
-                {
-                    id: 2,
-                    name: "Rahul Nahar",
-                    designation: "Co-founder"
-                },
-                {
-                    id: 3,
-                    name: "Yogesh Patidar",
-                    designation: "Co-founder"
-                },
-                {
-                    id: 4,
-                    name: "Abhisek Thakur",
-                    designation: "Accountant"
-                },
-                {
-                    id: 5,
-                    name: "Yogendra Bhimawad",
-                    designation: "Customer Representative"
-                },
-                {
-                    id: 6,
-                    name: "Arun Gothi",
-                    designation: "Stock Manager"
-                },
-                {
-                    id: 7,
-                    name: "Rahul Patidar",
-                    designation: "Field officer"
-                },
-            ],
+            villageCount: 0,
+            customerCount: 0,
+            productCount: 0,
+            companyCount: 0,
+        };
+
+        this.targetValues = {
+            villageCount: 25,
+            customerCount: 2000,
+            productCount: 700,
+            companyCount: 50,
+        };
+
+        this.countingOrder = ["villageCount", "customerCount", "productCount", "companyCount"];
+        this.intervalValues = {
+            villageCount: 1000, // 1 second
+            customerCount: 500, // 0.5 seconds
+            productCount: 800, // 0.8 seconds
+            companyCount: 1200, // 1.2 seconds
         };
     }
 
+    componentDidMount() {
+        this.counterIntervals = {};
+
+        for (const counter of this.countingOrder) {
+            this.counterIntervals[counter] = setInterval(() => {
+                if (this.state[counter] < this.targetValues[counter]) {
+                    this.setState(prevState => ({
+                        [counter]: prevState[counter] + 1,
+                    }));
+                }
+            }, this.intervalValues[counter]);
+        }
+    }
+
+    componentWillUnmount() {
+        for (const interval in this.counterIntervals) {
+            clearInterval(this.counterIntervals[interval]);
+        }
+    }
+
     render() {
+        const circleProgressStyles = {
+            position: "relative",
+            width: "100px",
+            height: "100px",
+            borderRadius: "50%",
+            backgroundColor: "#f3f3f3",
+            margin: "0 auto",
+            boxShadow: "inset 0 0 0 5px #d9d9d9",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            transform: "rotate(-90deg)"
+        };
+
+        const progressBarStyles = {
+            position: "absolute",
+            width: "100%",
+            height: "100%",
+            clip: "rect(0px, 50px, 100px, 0px)",
+            backgroundColor: "#FFA500",
+            borderRadius: "50%",
+            transition: "transform 0.8s"
+        };
+
+        const progressFillStyles = {
+            position: "absolute",
+            width: "100%",
+            height: "100%",
+            clip: "rect(0px, 50px, 100px, 0px)",
+            backgroundColor: "#FFA500",
+            borderRadius: "50%"
+        };
+
+        const progressLabelStyles = {
+            position: "absolute",
+            top: "0",
+            left: "0",
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            color: "#333",
+            fontSize: "16px",
+            fontWeight: "bold"
+        };
+
         return (
-            <React.Fragment>
-                <section className="section bg-light" id="gallery">
-                    <Container>
-                        <Row className="justify-content-center">
-                            <div className="col-lg-7">
-                                <div className="text-center mb-5">
-                                    <h2 className="">Achievements</h2>
-                                    <p className="text-mutsuccessed">
+            <section className="section bg-light" id="gallery">
+                <Container>
+                    <Row className="justify-content-center">
+                        <Col lg={7}>
+                            <div className="text-center mb-5">
+                                <h2 className="">Achievements</h2>
+                                <p className="text-muted">
                                     "One Step Toward Heights of Accomplishments"
-                                    </p>
-                                </div>
+                                </p>
                             </div>
-                        </Row>
-                        
-                    </Container>
-                </section>
-            </React.Fragment>
+                        </Col>
+                    </Row>
+                    <Row>
+                        {this.countingOrder.map(counter => (
+                            <Col key={counter} md={3}>
+                                <h2>{counter.replace("Count", "")}: {this.state[counter]}</h2>
+                                <div style={circleProgressStyles}>
+                                    <div
+                                        style={{
+                                            ...progressBarStyles,
+                                            transform: `rotate(${(this.state[counter] / this.targetValues[counter]) * 360}deg)`
+                                        }}
+                                    >
+                                        <div style={progressFillStyles} />
+                                    </div>
+                                    <div style={progressLabelStyles}>
+                                        {Math.round((this.state[counter] / this.targetValues[counter]) * 100)}%
+                                    </div>
+                                </div>
+                            </Col>
+                        ))}
+                    </Row>
+                </Container>
+            </section>
         );
     }
 }
