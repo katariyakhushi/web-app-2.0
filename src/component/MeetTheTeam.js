@@ -51,7 +51,7 @@ export default class MeetTheTeam extends Component {
     render() {
         return (
             <React.Fragment>
-                <section className="section bg-light" id="gallery">
+                <section className="section bg-light" id="team">
                     <Container>
                         <Row className="justify-content-center">
                             <div className="col-lg-7">

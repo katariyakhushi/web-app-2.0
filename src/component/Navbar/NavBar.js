@@ -71,6 +71,7 @@ class NavbarPage extends Component {
                                         </NavItem>
                                     ))}
                                 </Nav>
+<<<<<<< HEAD
                                 <ul className="list-inline ml-auto menu-social-icon mb-0 py-2 py-lg-0">
                                     
                                     <li className="list-inline-item">
@@ -85,6 +86,8 @@ class NavbarPage extends Component {
                                                                                                className="icon-xs sw_1-5"/></Link>
                                     </li>
                                 </ul>
+=======
+>>>>>>> 16761253d347c219e921f0e10fbba41c256e668d
                             </ScrollspyNav>
                         </Collapse>
                     </Container>

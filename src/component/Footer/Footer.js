@@ -74,6 +74,20 @@ class Footer extends Component {
                                             on Instagram
                                         </a>
                                     </div>
+                                    <div className="text-white-70 mt-2">
+                                        <a href="https://www.linkedin.com/in/sandeep-bhimawad-9127aa16b"
+                                           style={{
+                                                color: "#007bff"
+                                           }}
+                                           target="_blank"
+                                           rel="noreferrer">
+                                            <FeatherIcon
+                                                className="icon mr-1"
+                                                icon="linkedin"/>
+                                            {" "}
+                                            Linkedin
+                                        </a>
+                                    </div>
                                 </div>
                             </Col>
                             <Col lg={7} className="offset-lg-1">
