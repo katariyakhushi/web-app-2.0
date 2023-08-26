@@ -17,7 +17,7 @@ export default class About extends Component {
                         <Row className="justify-content-center">
                             <Col lg={7}>
                                 <div className="text-center mb-5">
-                                    <h2 className="">Why us?</h2>
+                                    <h2 className="">About us?</h2>
                                     <p className="text-muted">Kisano Ka Apna Bazar</p>
                                 </div>
                             </Col>
