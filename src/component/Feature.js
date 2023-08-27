@@ -27,7 +27,7 @@ class Feature extends Component {
     render() {
         return (
             <React.Fragment>
-                <section className="section" id="features">
+                <section className="section bg-light" id="features">
                     <Container>
                         <Row className="justify-content-center">
                             <Col lg={7}>

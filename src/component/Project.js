@@ -62,7 +62,7 @@ export default class Project extends Component {
     render() {
         return (
             <React.Fragment>
-                <section className="section bg-light" id="project">
+                <section className="section" id="project">
                     <Container>
                         <Row className="justify-content-center">
                             <div className="col-lg-7">

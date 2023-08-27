@@ -6,8 +6,6 @@ import {Link} from "react-router-dom";
 import logodark from "../../assets/images/logo.png";
 import logolight from "../../assets/images/logo.png";
 
-//import icon
-import FeatherIcon from "feather-icons-react";
 
 import ScrollspyNav from "./Scrollspy";
 
@@ -74,17 +72,17 @@ class NavbarPage extends Component {
  
                                 <ul className="list-inline ml-auto menu-social-icon mb-0 py-2 py-lg-0">
                                     
-                                    <li className="list-inline-item">
-                                        <Link className="menu-social-link">
-                                                <FeatherIcon icon="instagram"
-                                                             className="icon-xs sw_1-5"/>
-                                        </Link>
-                                    </li>
-                                    {" "}
-                                    <li className="list-inline-item mr-0">
-                                        <Link to="#" className="menu-social-link"><FeatherIcon icon="linkedin"
-                                                                                               className="icon-xs sw_1-5"/></Link>
-                                    </li>
+                                    {/*<li className="list-inline-item">*/}
+                                    {/*    <Link className="menu-social-link">*/}
+                                    {/*            <FeatherIcon icon="instagram"*/}
+                                    {/*                         className="icon-xs sw_1-5"/>*/}
+                                    {/*    </Link>*/}
+                                    {/*</li>*/}
+                                    {/*{" "}*/}
+                                    {/*<li className="list-inline-item mr-0">*/}
+                                    {/*    <Link to="#" className="menu-social-link"><FeatherIcon icon="linkedin"*/}
+                                    {/*                                                           className="icon-xs sw_1-5"/></Link>*/}
+                                    {/*</li>*/}
                                 </ul>
                             </ScrollspyNav>
                         </Collapse>

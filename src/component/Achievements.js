@@ -1,30 +1,29 @@
-import React, { Component } from "react";
-import { Col, Container, Row } from "reactstrap";
-import FeatherIcon from "feather-icons-react";
+import React, {Component} from "react";
+import {Col, Container, Row} from "reactstrap";
 
 export default class Achievements extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            villageCount: 0,
-            customerCount: 0,
-            productCount: 0,
-            companyCount: 0,
+            VillagesCount: 0,
+            CustomersCount: 0,
+            ProductsCount: 0,
+            CompaniesCount: 0,
         };
 
         this.targetValues = {
-            villageCount: 25,
-            customerCount: 2000,
-            productCount: 700,
-            companyCount: 50,
+            VillagesCount: 25,
+            CustomersCount: 2000,
+            ProductsCount: 500,
+            CompaniesCount: 45,
         };
 
-        this.countingOrder = ["villageCount", "customerCount", "productCount", "companyCount"];
+        this.countingOrder = ["VillagesCount",  "CompaniesCount", "ProductsCount", "CustomersCount" ];
         this.intervalValues = {
-            villageCount: 1000, // 1 second
-            customerCount: 500, // 0.5 seconds
-            productCount: 800, // 0.8 seconds
-            companyCount: 1200, // 1.2 seconds
+            VillagesCount: 100, // 1 second
+            CustomersCount: 0.5, // 0.5 seconds
+            ProductsCount: 1, // 0.8 seconds
+            CompaniesCount: 90, // 1.2 seconds
         };
     }
 
@@ -97,7 +96,7 @@ export default class Achievements extends Component {
         };
 
         return (
-            <section className="section bg-light" id="gallery">
+            <section className="section bg-light" id="achievements">
                 <Container>
                     <Row className="justify-content-center">
                         <Col lg={7}>
@@ -111,21 +110,28 @@ export default class Achievements extends Component {
                     </Row>
                     <Row>
                         {this.countingOrder.map(counter => (
-                            <Col key={counter} md={3}>
-                                <h2>{counter.replace("Count", "")}: {this.state[counter]}</h2>
-                                <div style={circleProgressStyles}>
-                                    <div
-                                        style={{
-                                            ...progressBarStyles,
-                                            transform: `rotate(${(this.state[counter] / this.targetValues[counter]) * 360}deg)`
-                                        }}
-                                    >
-                                        <div style={progressFillStyles} />
-                                    </div>
-                                    <div style={progressLabelStyles}>
-                                        {Math.round((this.state[counter] / this.targetValues[counter]) * 100)}%
-                                    </div>
-                                </div>
+                            <Col key={counter} md={3} className="d-flex flex-column" style={{
+                                placeItems: "center"
+                            }}>
+                                <h2>
+                                    {this.state[counter]}+
+                                </h2>
+                                <h2>
+                                    {counter.replace("Count", "")}
+                                </h2>
+                                {/*<div style={circleProgressStyles}>*/}
+                                {/*    <div*/}
+                                {/*        style={{*/}
+                                {/*            ...progressBarStyles,*/}
+                                {/*            transform: `rotate(${(this.state[counter] / this.targetValues[counter]) * 360}deg)`*/}
+                                {/*        }}*/}
+                                {/*    >*/}
+                                {/*        <div style={progressFillStyles} />*/}
+                                {/*    </div>*/}
+                                {/*    <div style={progressLabelStyles}>*/}
+                                {/*        {Math.round((this.state[counter] / this.targetValues[counter]) * 100)}%*/}
+                                {/*    </div>*/}
+                                {/*</div>*/}
                             </Col>
                         ))}
                     </Row>

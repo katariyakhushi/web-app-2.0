@@ -10,7 +10,7 @@ export default class Services extends Component {
     render() {
         return (
             <React.Fragment>
-                <section className="section bg-light" id="services">
+                <section className="section" id="services">
                     <Container>
                         <Row className="justify-content-center">
                             <Col lg={7}>

@@ -23,10 +23,7 @@ class Layout extends Component {
         this.state = {
             navItems: [
                 {id: 1, idnm: "home", navheading: "Home"},
-                {id: 2, idnm: "about", navheading: "About"},
-
-
-
+                {id: 2, idnm: "about", navheading: "About us?"},
                 {id: 3, idnm: "services", navheading: "Our Stores"},
                 {id: 5, idnm: "project", navheading: "Products"},
                 {id: 6, idnm: "companies", navheading: "Partners"},
@@ -92,6 +89,9 @@ class Layout extends Component {
                     {/* Importing About */}
                     <About/>
 
+                    {/*Importing Achievement */}
+                    <Achievements/>
+
                     {/* Importing Service */}
                     <Services/>
 
@@ -112,9 +112,6 @@ class Layout extends Component {
 
                     {/* Importing Meet The Team Section */}
                     <MeetTheTeam/>
-
-                     {/*Importing Achievement */}
-                     <Achievements/>
 
                     {/* Importing Contact Us */}
                     <Contact/>

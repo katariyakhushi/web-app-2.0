@@ -23,6 +23,8 @@ class Footer extends Component {
                         {title: "Coromandel", link: "https://www.coromandel.biz/"},
                         {title: "Dhanuka", link: "https://www.dhanuka.com/"},
                         {title: "PlantBiotix", link: "https://www.plantbiotix.com/"},
+                        {title: "Crystal", link: "https://www.crystalcropprotection.com/"},
+                        {title: "UPL", link: "https://www.upl-ltd.com/"},
                     ],
                 },
                 {
