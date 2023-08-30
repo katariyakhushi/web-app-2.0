@@ -23,37 +23,44 @@ export default class Project extends Component {
                     id: 1,
                     img: Img1,
                     title: 'Plantbiotix',
-                    designation: 'INCRYL'
+                    designation: 'INCRYL',
+                    link: "https://www.plantbiotix.com/incryl.html"
                 },
                 {
                     id: 2,
                     img: Img2,
                     title: 'Plantbiotix',
-                    designation: 'INCRYL ULTRA'
+                    designation: 'INCRYL ULTRA',
+                    link: "https://www.plantbiotix.com/incryl-ultra.html"
                 },
                 {
                     id: 3,
                     img: Img3,
                     title: 'Plantbiotix',
-                    designation: 'LIMO-CRUB'
+                    designation: 'LIMO-CRUB',
+                    link: "https://www.plantbiotix.com/bave-curb.html"
                 },
                 {
                     id: 4,
                     img: Img4,
                     title: 'Plantbiotix',
-                    designation: 'MONAS-CRUB'
+                    designation: 'MONAS-CRUB',
+                    link: "https://plantbiotix.com/monas-curb.html"
                 },
                 {
                     id: 5,
                     img: Img5,
                     title: 'Plantbiotix',
-                    designation: 'RUBITROL'
+                    designation: 'RUBITROL',
+                    link: "https://plantbiotix.com/rubitrol.html"
                 },
                 {
                     id: 6,
                     img: Img6,
                     title: 'Plantbiotix',
-                    designation: 'xplorer-glory'
+                    designation: 'xplorer-glory',
+                    link: "https://plantbiotix.com/xplorer-glory.html"
+
                 },
             ],
         };
@@ -70,6 +77,7 @@ export default class Project extends Component {
                                     <h2 className="">Our Latest Products</h2>
                                     <p className="text-muted">
                                     "Use specialized agricultural medicines for safe production in farming."
+                                        <br/>
                                     "Choose the right agricultural remedies for the health of trees and plants."
                                     </p>
                                 </div>
@@ -96,11 +104,18 @@ export default class Project extends Component {
                                         </div>
                                         <div className="d-flex flex-column align-items-center p-3">
                                             <h4 className="f-17 mb-1 text-center">
-                                                <Link to="#" className="text-dark">{item.title}</Link>
+                                                <a href={item.link} className="text-dark" target="_blank"  rel="noreferrer">{item.title}</a>
                                             </h4>
-                                            <p className="text-center" style={{
-                                                color: "green"
-                                            }}>{item.designation}</p>
+                                            <p className="text-center">
+                                                <a href={item.link}
+                                                   target="_blank"
+                                                   rel="noreferrer"
+                                                   style={{
+                                                       color: "green"
+                                                   }}>
+                                                    {item.designation}
+                                                </a>
+                                            </p>
                                         </div>
                                     </div>
                                 </Col>
