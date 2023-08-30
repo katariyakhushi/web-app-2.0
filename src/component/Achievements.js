@@ -12,18 +12,18 @@ export default class Achievements extends Component {
         };
 
         this.targetValues = {
-            VillagesCount: 25,
-            CustomersCount: 2000,
-            ProductsCount: 500,
-            CompaniesCount: 45,
+            VillagesCount: 1500,
+            CustomersCount: 25000,
+            ProductsCount: 2000,
+            CompaniesCount: 100,
         };
 
         this.countingOrder = ["VillagesCount",  "CompaniesCount", "ProductsCount", "CustomersCount" ];
         this.intervalValues = {
-            VillagesCount: 100, // 1 second
-            CustomersCount: 0.5, // 0.5 seconds
-            ProductsCount: 1, // 0.8 seconds
-            CompaniesCount: 90, // 1.2 seconds
+            VillagesCount: 0.4, // 1 second
+            CustomersCount: 0.01, // 0.5 seconds
+            ProductsCount: 0.1, // 0.8 seconds
+            CompaniesCount: 1, // 1.2 seconds
         };
     }
 
