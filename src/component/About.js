@@ -56,17 +56,25 @@ export default class About extends Component {
                                     <FeatherIcon className="icon-xs icon mr-2" icon="monitor"/>{" "}
                                     Expert Assistance
                                 </p>
-                                <Link to="#" className="read-more f-18">
-                                    More Information{" "}
-                                    <span className="ml-2 right-icon f-24">&#8594;</span>
-                                </Link>
+                                <p className="f-17 text-muted">
+                                    <FeatherIcon className="icon-xs icon mr-2" icon="target"/>{" "}
+                                    Precise Crop Planning
+                                </p>
+                                <p className="f-17 text-muted">
+                                    <FeatherIcon className="icon-xs icon mr-2" icon="heart"/>{" "}
+                                    Sustainable Farming Practices
+                                </p>
+                                <p className="f-17 text-muted mb-4">
+                                    <FeatherIcon className="icon-xs icon mr-2" icon="clock"/>{" "}
+                                    Time-Saving Solutions
+                                </p>
                             </Col>
                             <Col lg={6} md={12}>
                                 <div className="card border-0">
                                     <div
                                         className="bg-soft-info about-img rounded"
                                         style={{
-                                            paddingTop: "100%", // This maintains the aspect ratio
+                                            paddingTop: "80%", // This maintains the aspect ratio
                                             position: "relative",
                                         }}
                                     >
@@ -86,15 +94,12 @@ export default class About extends Component {
                                         />
                                     </div>
                                     <div className="mt-3">
-                                        <p className="text-uppercase text-muted mb-2 f-13">
-                                            Green Solutions
-                                        </p>
-                                        <h4 className="f-18">Marketing Product</h4>
+                                        <h4 className="f-18">Kisano ka Apna Bazar</h4>
                                         <p className="text-muted">
-                                            Kisano ka Apna Bazar:- Starting from Shajapur, our
+                                            Starting from Shajapur, our
                                             organization delivers fertilizers, seeds, and expert advice
                                             to farmers' doorsteps, enhancing crop production and
-                                            quality. Join us today to elevate your crops to new heights
+                                            quality. Join us today to elevate your crops to new heights.
                                         </p>
                                         <Link to="#" className="read-more text-primary">
                                             Read More <span className="ml-2 right-icon">&#8594;</span>

@@ -36,7 +36,7 @@ class Section extends Component {
                             </Col>
                             <Col lg={6} md={10}>
                                 <div className=" mt-5 mt-lg-0">
-                                    <img src={hero} alt="" className="img-fluid d-block mx-auto"/>
+                                    <img src={hero} alt="" className="img-fluid d-block mx-auto animated-fade-in"/>
                                 </div>
                             </Col>
                         </Row>
