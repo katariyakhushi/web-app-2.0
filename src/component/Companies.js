@@ -56,7 +56,9 @@ export default class Companies extends Component {
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
-            arrows: false,
+            arrows: true,
+            autoplay: true,
+            autoplaySpeed: 1000,
             centerPadding: '20px',
             responsive: [
                 {
