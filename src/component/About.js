@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import {Link} from "react-router-dom";
 import {Col, Container, Row} from "reactstrap";
 
 // Import Background Image
@@ -101,9 +100,9 @@ export default class About extends Component {
                                             to farmers' doorsteps, enhancing crop production and
                                             quality. Join us today to elevate your crops to new heights.
                                         </p>
-                                        <Link to="#" className="read-more text-primary">
+                                        <a href="#features" className="read-more text-primary">
                                             Read More <span className="ml-2 right-icon">&#8594;</span>
-                                        </Link>
+                                        </a>
                                     </div>
                                 </div>
                             </Col>

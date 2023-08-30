@@ -4,12 +4,6 @@
     text-align: center;
 }
 
-/* Section Subtitle */
-.section-subtitle {
-    font-size: 18px;
-    color: #777; /* Subtitle text color */
-}
-
 /* Achievement Item */
 .achievement-item {
     margin-top: 30px;
@@ -29,6 +23,25 @@
 
 /* Keyframes for Counting Up Animation */
 @keyframes count-up {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.feature-description {
+    font-size: 16px;
+    color: #555; /* Description text color */
+    opacity: 0; /* Initial opacity for animation */
+    animation: fadeInFeature 1s ease-in-out forwards; /* Fade-in animation */
+}
+
+/* Animation Keyframes */
+@keyframes fadeInFeature {
     from {
         opacity: 0;
         transform: translateY(-20px);
