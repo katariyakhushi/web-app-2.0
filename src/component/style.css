@@ -51,3 +51,55 @@
         transform: translateY(0);
     }
 }
+
+
+/* Animation for the image scaling */
+@keyframes scaleImage {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Animation for the text fade-in */
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.gallery-box {
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    animation: scaleImage 0.5s ease-in-out; /* Apply the scaleImage animation */
+}
+
+.gallery-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: fadeInText 0.5s ease-in-out; /* Apply the fadeInText animation */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.gallery-box:hover .gallery-text {
+    opacity: 1;
+}
