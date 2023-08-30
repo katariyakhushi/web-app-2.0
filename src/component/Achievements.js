@@ -20,10 +20,10 @@ export default class Achievements extends Component {
 
         this.countingOrder = ["VillagesCount",  "CompaniesCount", "ProductsCount", "CustomersCount" ];
         this.intervalValues = {
-            VillagesCount: 0.4, // 1 second
-            CustomersCount: 0.01, // 0.5 seconds
-            ProductsCount: 0.1, // 0.8 seconds
-            CompaniesCount: 1, // 1.2 seconds
+            VillagesCount: 0.001, // 1 second
+            CustomersCount: 0.1, // 0.5 seconds
+            ProductsCount: 0.001, // 0.8 seconds
+            CompaniesCount: 10, // 1.2 seconds
         };
     }
 
@@ -33,9 +33,16 @@ export default class Achievements extends Component {
         for (const counter of this.countingOrder) {
             this.counterIntervals[counter] = setInterval(() => {
                 if (this.state[counter] < this.targetValues[counter]) {
-                    this.setState(prevState => ({
-                        [counter]: prevState[counter] + 1,
-                    }));
+
+                    if(counter === "CustomersCount") {
+                        this.setState(prevState => ({
+                            [counter]: prevState[counter] + 25
+                        }));
+                    } else {
+                        this.setState(prevState => ({
+                            [counter]: prevState[counter] + 1
+                        }));
+                    }
                 }
             }, this.intervalValues[counter]);
         }
@@ -48,52 +55,6 @@ export default class Achievements extends Component {
     }
 
     render() {
-        const circleProgressStyles = {
-            position: "relative",
-            width: "100px",
-            height: "100px",
-            borderRadius: "50%",
-            backgroundColor: "#f3f3f3",
-            margin: "0 auto",
-            boxShadow: "inset 0 0 0 5px #d9d9d9",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            transform: "rotate(-90deg)"
-        };
-
-        const progressBarStyles = {
-            position: "absolute",
-            width: "100%",
-            height: "100%",
-            clip: "rect(0px, 50px, 100px, 0px)",
-            backgroundColor: "#FFA500",
-            borderRadius: "50%",
-            transition: "transform 0.8s"
-        };
-
-        const progressFillStyles = {
-            position: "absolute",
-            width: "100%",
-            height: "100%",
-            clip: "rect(0px, 50px, 100px, 0px)",
-            backgroundColor: "#FFA500",
-            borderRadius: "50%"
-        };
-
-        const progressLabelStyles = {
-            position: "absolute",
-            top: "0",
-            left: "0",
-            width: "100%",
-            height: "100%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            color: "#333",
-            fontSize: "16px",
-            fontWeight: "bold"
-        };
 
         return (
             <section className="section bg-light" id="achievements">
