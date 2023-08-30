@@ -1,5 +1,6 @@
-import React, {Component} from "react";
-import {Col, Container, Row} from "reactstrap";
+import React, { Component } from "react";
+import { Col, Container, Row } from "reactstrap";
+import "./style.css"; // Import your CSS file for styling
 
 export default class Achievements extends Component {
     constructor(props) {
@@ -18,7 +19,12 @@ export default class Achievements extends Component {
             CompaniesCount: 100,
         };
 
-        this.countingOrder = ["VillagesCount",  "CompaniesCount", "ProductsCount", "CustomersCount" ];
+        this.countingOrder = [
+            "VillagesCount",
+            "CompaniesCount",
+            "ProductsCount",
+            "CustomersCount",
+        ];
         this.intervalValues = {
             VillagesCount: 0.001, // 1 second
             CustomersCount: 0.1, // 0.5 seconds
@@ -33,14 +39,13 @@ export default class Achievements extends Component {
         for (const counter of this.countingOrder) {
             this.counterIntervals[counter] = setInterval(() => {
                 if (this.state[counter] < this.targetValues[counter]) {
-
-                    if(counter === "CustomersCount") {
-                        this.setState(prevState => ({
-                            [counter]: prevState[counter] + 25
+                    if (counter === "CustomersCount") {
+                        this.setState((prevState) => ({
+                            [counter]: prevState[counter] + 25,
                         }));
                     } else {
-                        this.setState(prevState => ({
-                            [counter]: prevState[counter] + 1
+                        this.setState((prevState) => ({
+                            [counter]: prevState[counter] + 1,
                         }));
                     }
                 }
@@ -55,9 +60,8 @@ export default class Achievements extends Component {
     }
 
     render() {
-
         return (
-            <section className="section bg-light" id="achievements">
+            <section className="section bg-light achievements-section" id="achievements">
                 <Container>
                     <Row className="justify-content-center">
                         <Col lg={7}>
@@ -70,29 +74,19 @@ export default class Achievements extends Component {
                         </Col>
                     </Row>
                     <Row>
-                        {this.countingOrder.map(counter => (
-                            <Col key={counter} md={3} className="d-flex flex-column" style={{
-                                placeItems: "center"
-                            }}>
+                        {this.countingOrder.map((counter) => (
+                            <Col
+                                key={counter}
+                                md={3}
+                                className="d-flex flex-column achievement-item"
+                            >
                                 <h2>
-                                    {this.state[counter]}+
+                                    {this.state[counter] > 0 ? "+" : ""}
+                                    {this.state[counter]}
                                 </h2>
-                                <h2>
+                                <h2 className="achievement-label">
                                     {counter.replace("Count", "")}
                                 </h2>
-                                {/*<div style={circleProgressStyles}>*/}
-                                {/*    <div*/}
-                                {/*        style={{*/}
-                                {/*            ...progressBarStyles,*/}
-                                {/*            transform: `rotate(${(this.state[counter] / this.targetValues[counter]) * 360}deg)`*/}
-                                {/*        }}*/}
-                                {/*    >*/}
-                                {/*        <div style={progressFillStyles} />*/}
-                                {/*    </div>*/}
-                                {/*    <div style={progressLabelStyles}>*/}
-                                {/*        {Math.round((this.state[counter] / this.targetValues[counter]) * 100)}%*/}
-                                {/*    </div>*/}
-                                {/*</div>*/}
                             </Col>
                         ))}
                     </Row>
