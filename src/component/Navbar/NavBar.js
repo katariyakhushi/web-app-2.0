@@ -8,6 +8,7 @@ import logolight from "../../assets/images/logo.png";
 
 
 import ScrollspyNav from "./Scrollspy";
+import FeatherIcon from "feather-icons-react";
 
 class NavbarPage extends Component {
     // render() {
@@ -45,7 +46,7 @@ class NavbarPage extends Component {
                         <Collapse
                             id="navbarCollapse"
                             isOpen={this.state.isOpenMenu}
-                            className=" navbar-collapse"
+                            className="navbar-collapse"
                         >
                             <ScrollspyNav
                                 scrollTargetIds={targetId}
@@ -69,10 +70,14 @@ class NavbarPage extends Component {
                                         </NavItem>
                                     ))}
                                 </Nav>
- 
-                                <ul className="list-inline ml-auto menu-social-icon mb-0 py-2 py-lg-0">
-                                    {/* Add social icons or links here */}
-                                </ul>
+                                <div className="badge f-14 bg-soft-dark text-muted mt-2">
+                                   <span
+                                       className="text-dark">
+                                       <FeatherIcon
+                                           className="icon mr-1"
+                                           icon="phone"/>
+                                    </span> (+91) 88007 79618
+                                </div>
                             </ScrollspyNav>
                         </Collapse>
                     </Container>

@@ -50,7 +50,7 @@ function StoreCard({ imgSrc, title, mapSrc }) {
 
     return (
         <Col lg={4}>
-            <div className="card service-box text-center p-2">
+            <div className="card service-box text-center p-2 team-member">
                 <img src={imgSrc} alt="" className="img-fluid d-block" />
                 <br />
                 <h4 className="service-title mt-4 mb-3 f-18">{title}</h4>

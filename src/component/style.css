@@ -103,3 +103,21 @@
 .gallery-box:hover .gallery-text {
     opacity: 1;
 }
+
+/* style.css */
+
+.team-member {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
