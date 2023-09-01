@@ -23,7 +23,8 @@ const Contact = () => {
         comments: "",
     });
 
-    const [showModal, setShowModal] = useState(false)
+    const [sendMail, setSendMail] = useState(false)
+    const [isLoaded, setIsLoaded] = useState(true)
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -40,11 +41,13 @@ const Contact = () => {
             .then(
                 (result) => {
                     console.log("Email sent successfully:", result);
-                    setShowModal(true)
+                    setSendMail(true)
                     // Handle success, e.g., show a success message to the user
                 },
                 (error) => {
                     console.error("Email sending failed:", error);
+                    setSendMail(false)
+                    setIsLoaded(false)
                     // Handle error, e.g., show an error message to the user
                 }
             ).catch(e => {
@@ -223,6 +226,23 @@ const Contact = () => {
                                         </Col>
                                     </Row>
                                 </Form>
+
+                                {
+                                    (sendMail) && <div className="mt-5">
+                                        <FeatherIcon
+                                            className="icon mr-1"
+                                            icon="check-circle"/>
+                                        <span className="text-success">Thanks for reaching out! Our Customer team will contact you soon.</span>
+                                    </div>
+                                }
+                                {
+                                    !isLoaded && <div className="mt-5">
+                                        <FeatherIcon
+                                            className="icon mr-1"
+                                            icon="alert-circle"/>
+                                        <span className="text-danger">Oops! Error Sending email, please connect via call.</span>
+                                    </div>
+                                }
                             </div>
                         </Col>
                     </Row>
