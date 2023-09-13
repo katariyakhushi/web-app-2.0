@@ -103,9 +103,9 @@ class Footer extends Component {
                                             <ul className="list-unstyled footer-sub-menu">
                                                 {item.child.map((linkItem, key) => (
                                                     <li key={key}>
-                                                        <Link className="footer-link" to={linkItem.link}>
+                                                        <a className="footer-link" href={linkItem.link} target="_blank">
                                                             {linkItem.title}
-                                                        </Link>
+                                                        </a>
                                                     </li>
                                                 ))}
                                             </ul>

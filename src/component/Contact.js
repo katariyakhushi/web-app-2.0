@@ -51,6 +51,8 @@ const Contact = () => {
                     // Handle error, e.g., show an error message to the user
                 }
             ).catch(e => {
+            setIsLoaded(false)
+            setSendMail(false)
             console.log("Error", e)
         });
 
